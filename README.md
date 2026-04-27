@@ -10,16 +10,25 @@ The website presents a structured overview of profile, interests, and work in a 
 -Smooth scrolling navigation
 -Minimal and clean section-based layout
 -Responsive and user-friendly design
+
  **Sections Included**
+ 
 **Home** – Introduction with typing effect
+
 **About** – Brief personal overview and interests in space technology
+
 **Skills** – Technologies and tools
+
 **Projects** – Key work and ideas
+
 **Contact **– Basic contact information
 
 **Technologies Used**
+
 **HTML5** – Structure
+
 **CSS3** – Styling (glassmorphism + gradients + animations)
+
 **JavaScript** – Interactivity (typing effect, smooth scroll)
 
 **Purpose**
