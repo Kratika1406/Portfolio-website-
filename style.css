@@ -1,0 +1,223 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background: radial-gradient(circle at center, #1a0033, #000);
+    color: white;
+    overflow-x: hidden;
+}
+
+/* 🌌 Stars */
+body::before {
+    content: "";
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: url('https://www.transparenttextures.com/patterns/stardust.png');
+    opacity: 0.3;
+    z-index: -1;
+}
+
+/* 🌌 Navbar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 60px;
+    background: rgba(0,0,0,0.4);
+    backdrop-filter: blur(10px);
+    position: sticky;
+    top: 0;
+}
+
+nav h1 {
+    color: #b366ff;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+nav ul li {
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+nav ul li:hover {
+    color: #b366ff;
+}
+
+/* 🌌 Hero */
+.hero {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    color: #d9b3ff;
+}
+
+.hero p {
+    margin-top: 15px;
+    color: #aaa;
+    max-width: 600px;
+}
+
+/* 🌌 Sections */
+section {
+    padding: 80px 60px;
+}
+
+h2 {
+    color: #b366ff;
+    margin-bottom: 20px;
+}
+
+/* 🌌 Cards */
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: rgba(255,255,255,0.05);
+    padding: 20px;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 20px #b366ff;
+}
+
+/* 🌌 Background Planets */
+.planet {
+    position: fixed;
+    border-radius: 50%;
+    filter: blur(40px);
+    opacity: 0.6;
+    z-index: -1;
+}
+
+/* Big right planet */
+.planet1 {
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(circle, #b366ff, transparent);
+    top: 80px;
+    right: 80px;
+}
+
+/* Bottom left planet */
+.planet2 {
+    width: 250px;
+    height: 250px;
+    background: radial-gradient(circle, #9933ff, transparent);
+    bottom: 50px;
+    left: 50px;
+}
+
+/* Small middle planet */
+.planet3 {
+    width: 120px;
+    height: 120px;
+    background: radial-gradient(circle, #cc99ff, transparent);
+    top: 300px;
+    right: 400px;
+}
+
+/* Ring planet */
+.planet4 {
+    width: 200px;
+    height: 200px;
+    background: radial-gradient(circle, #ffccff, transparent);
+    bottom: 80px;
+    right: 100px;
+    position: fixed;
+}
+
+.planet4::after {
+    content: "";
+    position: absolute;
+    width: 300px;
+    height: 80px;
+    border: 2px solid rgba(255,255,255,0.2);
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(20deg);
+}
+
+/* 🌌 Hero Buttons */
+.buttons {
+    margin-top: 25px;
+}
+
+.btn {
+    padding: 12px 25px;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.btn-primary {
+    background: linear-gradient(45deg, #b366ff, #7a00cc);
+    color: white;
+}
+
+.btn-primary:hover {
+    box-shadow: 0 0 15px #b366ff;
+}
+
+.btn-outline {
+    background: transparent;
+    border: 1px solid #b366ff;
+    color: white;
+}
+
+.btn-outline:hover {
+    background: #b366ff;
+}
+
+/* 🌌 Subheading line */
+.hero h3 {
+    margin-top: 15px;
+    font-weight: normal;
+    color: #aaa;
+}
+html {
+    scroll-behavior: smooth;
+}
+.cursor {
+    display: inline-block;
+    margin-left: 5px;
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0%, 50%, 100% { opacity: 1; }
+    25%, 75% { opacity: 0; }
+}
+
+/* 🌌 Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #aaa;
+}
