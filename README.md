@@ -21,7 +21,7 @@ The website presents a structured overview of profile, interests, and work in a 
 
 **Projects** – Key work and ideas
 
-**Contact **– Basic contact information
+**Contact**– Basic contact information
 
 **Technologies Used**
 
